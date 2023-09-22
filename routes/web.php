@@ -43,7 +43,7 @@ Route::get('/produtos', function () {
             echo "<td>" . $p->nome . "</td>";
             echo "<td>" . $p->estoque . "</td>";
             echo "<td>" . $p->preco . "</td>";
-            echo "<td>" . $p->cateogria_id . "</td>";
+            echo "<td>" . $p->categoria_id . "</td>";
             echo "</tr>";
         }
     }
