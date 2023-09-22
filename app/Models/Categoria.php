@@ -7,5 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Categoria extends Model
 {
-    use HasFactory;
+    function produtos() {
+        return $this->hasmany('App\Models\Produto'); // relacionamento criado para selecionar um pra muitos. Ex: Um categoria com vários produtos.
+    }
 }
